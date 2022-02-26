@@ -1,0 +1,45 @@
+<%- include('head.ejs') %>
+    <!--Bienvenida al usuario-->
+    <div class="alert alert-primary" role="alert">
+        Bienvenido <%=nombre%>
+        <button class="btn btn-warning float-right" onclick="location.href='/logout'">
+            Salir
+        </button>
+    </div>
+
+    <!--Formulario de ingreso de libros-->
+    <div class="alert alert-primary" role="alert">
+        Formulario de ingreso de libros
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            Ingrese a continuacion los datos del libro
+        </div>
+    
+        <%- include('form.ejs') %>    
+    </div>
+
+    <!--Listado de libros-->
+    <div class="alert alert-warning" role="alert">
+        Listado de libros cargados
+    </div>
+
+    <%- include('list.ejs') %>
+
+
+    <div class="alert alert-success" role="alert">
+        CHAT
+    </div>
+
+    <!--Chat-->
+
+    <div class="card-body">
+        <%- include('chat.ejs') %>
+    </div>
+
+    <script src="render.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="websocket.js"></script>
+
+<%- include('foot.ejs') %>

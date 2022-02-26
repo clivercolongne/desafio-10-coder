@@ -1,0 +1,35 @@
+<div id="messages"></div>
+
+<form onsubmit="return sendMessage(this)">
+
+    <div class="row mb-3">
+        <input type="email" class="form-control" id="id" placeholder="Email del usuario" required>
+    </div>
+
+    <div class="row mb-3">
+        <input type="text" class="form-control" id="nombre" placeholder="Nombre del usuario" required>
+    </div>
+
+    <div class="row mb-3">
+        <input type="text" class="form-control" id="apellido" placeholder="Apellido del usuario">
+    </div>
+
+    <div class="row mb-3">
+        <input type="number" class="form-control" id="edad" placeholder="Edad del usuario">
+    </div>
+
+    <div class="row mb-3">
+        <input type="text" class="form-control" id="alias" placeholder="Alias del usuario">
+    </div>
+
+    <div class="row mb-3">
+        <input type="text" class="form-control" id="avatar" placeholder="URL del avatar del usuario" required>
+    </div>
+    
+    <div class="row mb-3">
+        <input type="text" class="form-control" id="text" placeholder="Escriba el mensaje que desea enviar">
+    </div>
+
+    <input type="submit" class="btn btn-primary" value="Enviar">
+
+</form>

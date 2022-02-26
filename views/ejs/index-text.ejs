@@ -1,0 +1,23 @@
+<%- include('head.ejs') %>
+
+    <!--Formulario de ingreso de libros-->
+    <div class="alert alert-primary" role="alert">
+        Conectando desde /api/productos-test
+    </div>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Nombre</td>
+                <th scope="col">Precio</td>
+                <th scope="col">Foto</td>
+            </tr>
+        </thead>
+        <tbody id="list">
+            
+        </tbody>
+    </table>
+
+    <script src="fakeRender.js"></script>
+    
+<%- include('foot.ejs') %>
